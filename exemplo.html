@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrique & Elen - Nosso Casamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #333;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background: #575757;
+        }
+        section {
+            padding: 20px;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .pessoas-especiais img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        .galeria img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Henrique & Elen</h1>
+        <p>21 de Dezembro de 2024</p>
+        <nav>
+            <ul>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#rsvp">Confirmação de Presença</a></li>
+                <li><a href="#ao-nosso-lado">Ao Nosso Lado</a></li>
+                <li><a href="#presentes">Lista de Presentes</a></li>
+                <li><a href="#albuns">Álbuns</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="historia">
+        <h2>História</h2>
+        <p>Henrique e Elen se conheceram em uma tarde ensolarada... (conte sua história aqui).</p>
+    </section>
+
+    <section id="eventos">
+        <h2>Eventos</h2>
+        <p><strong>Data:</strong> 21 de Dezembro de 2024</p>
+        <p><strong>Horário:</strong> 16:00</p>
+        <p><strong>Local:</strong> Igreja Central - Rua Exemplo, 123</p>
+        <p><strong>Traje:</strong> Esporte fino</p>
+    </section>
+
+    <section id="rsvp">
+        <h2>Confirmação de Presença</h2>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="convidados">Número de convidados:</label><br>
+            <input type="number" id="convidados" name="convidados" min="1" max="10" required><br><br>
+            <button type="submit">Confirmar</button>
+        </form>
+    </section>
+
+    <section id="ao-nosso-lado">
+        <h2>Ao Nosso Lado</h2>
+        <div class="pessoas-especiais">
+            <p><strong>Daminhas e Pajens:</strong> Maria, João</p>
+            <p><strong>Padrinhos e Madrinhas:</strong> Ana e Pedro, Clara e Marcos</p>
+        </div>
+    </section>
+
+    <section id="presentes">
+        <h2>Lista de Presentes</h2>
+        <p>Escolha um presente e nos ajude a começar nossa nova jornada juntos!</p>
+        <ul>
+            <li><a href="#">Cota para Lua de Mel</a></li>
+            <li><a href="#">Jogo de Toalhas</a></li>
+            <li><a href="#">Panela de Pressão</a></li>
+        </ul>
+    </section>
+
+    <section id="albuns">
+        <h2>Álbuns</h2>
+        <div class="galeria">
+            <img src="foto1.jpg" alt="Foto do casal">
+            <img src="foto2.jpg" alt="Foto do casal">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Henrique & Elen. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

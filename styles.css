@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Glegoo:wght@400;700&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pathway+Gothic+One&family=Playball&display=swap');
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-image: url('imagens/capa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    height: 60vh;
+    color: white;
+}
+
+header > div {
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-size: 3rem;
+    padding-top: 10px;
+}
+
+header h2 {
+    font-family: "Allura", serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+header p{
+    font-family: "Pathway Gothic One";
+    display: block;
+    font-size: 1.4rem;
+    margin-top: -20px;
+}
+
+.menu-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.menu.active {
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+}
+
+.menu a:last-child {
+    border-bottom: none;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.4rem;
+    font-family:glegoo-regular;
+    color: rgba(0, 0, 0, 0.459);
+    text-align: center;
+    margin: 20px;
+
+
+}
+.historia h2 {
+    font-family: "Pathway Gothic One";
+    display: inline-block;
+    border-radius: 10px;
+    border: #333 5px solid;
+    background-color: rgba(250, 128, 114, 0.788);
+    color: #ffffff;
+    padding: 2vw;
+}
+.historia img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border-style: solid ;
+    border-width: 4px;
+    border-color: goldenrod;
+    margin: 1vw;
+}
+.historia p {
+    font-family: "Glecoo";
+    font-size: 1.2rem;
+    color: #666666;
+}
+
+.nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin-right: 5vw;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-family:"Playball";
+    color: #998675;
+}
+
+.nome h4 {
+    margin: 0;
+}
+
+.local {
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+.local iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

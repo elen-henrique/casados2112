@@ -5,54 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casado 21-12</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Allura&family=Glegoo:wght@400;700&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pathway+Gothic+One&family=Playball&display=swap');
+    <link rel="stylesheet" href="styles.css">
 
-        header {
-            text-align: center;
-        }
 
-        header>div {
-            font-family: "Great Vibes", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        header>h2 {
-
-            font-family: "Allura", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <div>H <br>E</div>
+        <div>H <br> E</div>
         <h2>Henrique & Elen</h2>
         <p>21 de Dezembro de 2024</p>
     </header>
-    <main>
-        <nav>
-            <a href="">abertura</a>
-            <a href="">historia</a>
-            <a href="">eventos</a>
-            <a href="">confirmação de presença</a>
-            <a href="">ao nosso lado</a>
-            <a href="">mensagens</a>
-            <a href="">lista de presentes</a>
-            <a href="">albuns</a>
-        </nav>
-        <p>Sejam Bem Vindos! Aqui começa a história desse Grande Dia!
-            Estamos muito felizes em compartilhar esse momento com cada um dos nossos convidados, esperamos que aproveitem cada momento e se divirtam muito!</p>
-        <div class="historia">
-            </div>
-        </div>
-    </main>
-    <footer>
 
+    <div class="menu-container">
+        <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">☰</button>
+        <nav class="menu" aria-expanded="false">
+            <a href="#intro">Abertura</a>
+            <a href="#historia">História</a>
+            <a href="#local">Evento</a>
+            <a href="#importante">Ao Nosso Lado</a>
+            <a href="#mensagens">Mural de Mensagens</a>
+            <a href="#album">Álbum do Casal</a>
+            <a href="#galeria">Galeria do Grande Dia</a>
+        </nav>
+    </div>
+
+    <main>
+        <section id="intro" class="intro">
+            <p>Sejam bem-vindos! Estamos muito felizes em compartilhar este momento especial com vocês. Esperamos que se divirtam e aproveitem cada instante!</p>
+        </section>
+        
+        <section id="historia" class="historia">
+            <h2>HISTÓRIA</h2>
+            <div class="foto-civil">
+                <img src="imagens/henrique-civil.jpg" alt="Henrique no civil">
+                <img src="imagens/elen-civil.jpg" alt="Elen no civil">
+            </div>
+            <div class="nome">
+                <div class="noivo">
+                    <h4>O Noivo</h4>
+                    <p>Henrique Cunha</p>
+                </div>
+                <div class="e-coluna">&</div>
+                <div class="noiva">
+                    <h4>A Noiva</h4>
+                    <p>Elen Cruz</p>
+                </div>
+            </div>
+            <p>Tudo começou no trabalho, quando o destino nos uniu em uma ligação inesperada. Dez anos se passaram, repletos de momentos incríveis, viagens fantásticas, e risadas sem fim. Agora, celebramos essa união e convidamos você a fazer parte deste dia inesquecível.</p>
+        </section>
+
+        <section id="local" class="local">
+            <h2>Local da Celebração</h2>
+            <p>Data: 21 de Dezembro de 2024</p>
+            <iframe src="#" title="Mapa do Local"></iframe>
+        </section>
+
+        <section id="importante" class="importante">
+            <h2>Ao Nosso Lado</h2>
+            <a href="#">Daminhas e Pajens</a>
+            <a href="#">Padrinhos & Madrinhas</a>
+            <a href="#">Nossos Pais</a>
+        </section>
+
+        <section id="mensagens" class="mensagens">
+            <h2>Mural de Mensagens</h2>
+            <a href="#">Deixe sua mensagem</a>
+        </section>
+
+        <section id="album" class="album">
+            <h2>Álbum do Casal</h2>
+            <p>#HenriqueElen</p>
+        </section>
+
+        <section id="galeria" class="galeria">
+            <h2>Galeria do Grande Dia</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Henrique & Elen</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+            const expanded = menu.classList.contains('active');
+            document.querySelector('.menu-toggle').setAttribute('aria-expanded', expanded);
+        }
+    </script>
 </body>
 
 </html>
